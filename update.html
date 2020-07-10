@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta http-equiv="refresh" content="30" charset="UTF-8" />
+<title>维护 >> 正在更新网站数据 </title>
+<style media='screen'>
+			body {
+				color: #000;
+				background-color: #fff;
+				font-family: sans-serif;
+				padding: 0em;
+			}
+			img, h1, h2, ul  {
+				text-align: left;
+				margin: 0.1em 0 0.3em;
+				margin-left:10px;
+			}
+			p, h2 {
+				text-align: left;
+				margin: 0.5em 0 1em;
+				margin-left:10px;
+			}
+			.title {
+				margin-left:10px;
+			}
+			h1 {
+				font-size: 140%;
+			}
+			h2 {
+				font-size: 110%;
+			}
+			h3 {
+				font-size: 100%;
+				margin-left:10px;
+			}
+			.errorbox {
+				color: #d33;
+				border-color: #fac5c5;
+				background-color: #fae3e3;
+				border: 0px solid;
+				word-break: normal;
+				padding: 0.5em 0.5em;
+				display: inline-block;
+				zoom: 1;
+				margin-left:10px;
+				margin-right:10px;
+			}
+			pre {
+				margin: 0px;
+				white-space: pre-wrap;       /* css-3 */
+				white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+				white-space: -pre-wrap;      /* Opera 4-6 */
+				white-space: -o-pre-wrap;    /* Opera 7 */
+				word-wrap: break-word;       /* Internet Explorer 5.5+ */
+			}
+			.progress-bar-animated {
+				animation: progress-bar-stripes 2s linear infinite;
+			}
+			.progress-bar-striped {
+				background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size: 1rem 1rem;
+			}
+			.progress-bar-section {
+				margin-right: 20px;margin-bottom:10px;margin-top:10px;white-space: nowrap;padding: 8px 0 8px 0;;
+			}
+			.progress-bar {
+				background-color: #eee;transition: width .6s ease;justify-content: center;display: flex;white-space: nowrap;
+			}
+			.section {
+				background-color: #F5F5F5; padding: 6px; margin-left: -8px; margin-right: -8px;
+			}
+			@keyframes progress-bar-stripes {
+				from { background-position: 28px 0; } to { background-position: 0 0; }
+			}
+		</style>
+</head>
+<body>
+<div style="height: 60px;background-color:#f8f9fa;padding-bottom:2px; margin-top: -8px;margin-left: -8px;margin-right: -8px; border-bottom: 4px solid #ffc107;">
+<img style="width:50px;margin-left:18px;padding-top:6px;padding-right: 18px;float:right;" src="头像.jpg" alt='The ComradeLaoji logo' />
+<h1 style="color:#222;margin-left:18px;padding-top:20px;">维护 >> 正在更新网站数据 </h1></div>
+<div style="margin-top:10px;line-height:1.4em;">
+</p><h3 class="section"><span class="title">Why do I see this page?</span></h3><p>
+<p>该扩展尝试通过推迟根据<code>update.php</code>得到的大部分维护工作来最小化冲突和停机时间，但是有些数据库相关的修改需要先完成，以此来避免数据的不一致发生。这可能包括：
+</p>
+<ul><li>改变表结构，如添加一个新域或修改一个现有的域</li>
+<li>修改或添加表的索引值</li>
+<li>运行表的优化操作（当优化操作开启时）</li></ul>
+</p><h3 class="section"><span class="title">进度</span></h3><p> <div class='progress-bar-section'>
+<div style='width:100%;margin-left: 8px;margin-bottom: 5px;'>Running table optimizations ...</div>
+<div class='progress-bar progress-bar-striped progress-bar-animated' style='background-color:#FFC107;height:16px;padding:2px;width:60%;margin-left: 8px;'></div>
+</div><p>An estimation as to when the upgrade is going to be finished is difficult to predict as it depends on the size of the data repository and the available hardware and can take a moment for larger wikis to complete.
+</p><p>Please contact your local administrator to get more information about the progress.
+</p></p>
+</div>
+</body>
+</html>
